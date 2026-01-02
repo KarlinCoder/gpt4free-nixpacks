@@ -1,5 +1,8 @@
 [phases.build]
-cmds = ['pip install -r requirements.txt', 'pip install -e .']
+cmds = [
+  "pip install -r requirements.txt",
+  "pip install -e ."
+]
 
 [start]
-cmd = 'python -m g4f --port 8080'
+cmd = "python -m g4f.api --port 8080 --host 0.0.0.0"
