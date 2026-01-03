@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "steps": {
+    "install": {
+      "commands": ["pip install -r requirements.txt", "pip install -e ."]
+    },
+  },
+  "deploy": {
+    "startCommand": "python -m g4f --port 8080 --debug"
+  }
+}
